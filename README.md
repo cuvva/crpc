@@ -14,7 +14,7 @@ await client('2018-03-06/get_user', { userId: 'foo' });
 ## Installation
 
 ```bash
-$ npm install crpc
+$ npm install @cuvva/crpc
 ```
 
 ## Support
