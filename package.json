@@ -12,7 +12,7 @@
     "url": "https://github.com/cuvva/crpc.git"
   },
   "dependencies": {
-    "@cuvva/json-client": "^1.0.0"
+    "json-client": "cuvva/json-client#master"
   },
   "keywords": [
     "crpc",
