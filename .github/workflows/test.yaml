@@ -1,0 +1,19 @@
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run tests
+        run: |
+          ls -d */test | cut -f1 -d'/' | grep -v '^node_modules$' | parallel 'cd ./{}; pwd; yarn test'
