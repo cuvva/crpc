@@ -11,9 +11,15 @@
     "type": "git",
     "url": "https://github.com/cuvva/crpc.git"
   },
+  "scripts": {
+		"test": "ava --tap"
+	},
   "dependencies": {
     "@cuvva/json-client": "^1.0.1"
   },
+  "devDependencies": {
+		"ava": "^3.15.0"
+	},
   "keywords": [
     "crpc",
     "cuvva",
