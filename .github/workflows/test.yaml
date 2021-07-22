@@ -15,5 +15,4 @@ jobs:
         run: yarn install
 
       - name: Run tests
-        run: |
-          ls -d */test | cut -f1 -d'/' | grep -v '^node_modules$' | parallel 'cd ./{}; pwd; yarn test'
+        run: yarn test
