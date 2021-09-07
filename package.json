@@ -1,6 +1,6 @@
 {
   "name": "@cuvva/crpc",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Simple library for making requests to Cuvva-style RPC APIs",
   "homepage": "https://github.com/cuvva/crpc",
   "bugs": "https://github.com/cuvva/crpc/issues",
@@ -15,7 +15,7 @@
     "test": "ava --tap"
   },
   "dependencies": {
-    "@cuvva/json-client": "^1.0.1"
+    "@cuvva/json-client": "^1.0.2"
   },
   "devDependencies": {
     "ava": "^3.15.0"
